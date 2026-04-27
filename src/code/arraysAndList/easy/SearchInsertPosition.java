@@ -1,8 +1,6 @@
-package arraysAndList.easy;
+package code.arraysAndList.easy;
 
 import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.Set;
 
 
 /*

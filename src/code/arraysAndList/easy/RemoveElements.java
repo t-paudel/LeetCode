@@ -1,4 +1,4 @@
-package arraysAndList.easy;
+package code.arraysAndList.easy;
 
 /*
     ======================

@@ -1,4 +1,4 @@
-import arraysAndList.easy.RemoveDuplicates;
+import code.arraysAndList.easy.RemoveDuplicates;
 
 void main() {
     int[] nums = new int[]{1,1,3,4,5,6,6,7};
