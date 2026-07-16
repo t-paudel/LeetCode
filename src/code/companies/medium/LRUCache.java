@@ -4,7 +4,21 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class LRUCache {
-    public class Node {
+    static void main() {
+
+        LRUCache cache = new LRUCache(2);
+        System.out.println(cache);
+        cache.put(1, 100);
+        System.out.println(cache);
+        cache.put(2, 101);
+        System.out.println(cache);
+        cache.put(2, 102);
+        System.out.println(cache);
+        cache.put(3, 103);
+        System.out.println(cache);
+    }
+
+    public static class Node {
         int key;
         int value;
         Node prev;
@@ -79,5 +93,16 @@ public class LRUCache {
 
         head.next.prev = node;
         head.next = node;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder("[");
+        map.keySet().forEach(key -> {
+            sb.append(key).append(" -> ").append(map.get(key).value).append(", ");
+        });
+        sb.append("]");
+
+        return sb.toString();
     }
 }
